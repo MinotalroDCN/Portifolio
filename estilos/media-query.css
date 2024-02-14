@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 95vw;
+        margin: auto;
+        padding: 30px 0px;
+    }
+
+    header {
+        width: 400px;
+    }
+
+
+    .cargo {
+        width: 380px;
+    }
+
+    .projetos img {
+        width: 880px;
+        height: 480px;
+    }
+
+    .projetos h3 {
+        display: none;
+    }
+
+    .projetos p {
+        display: none;
+    }
+}
