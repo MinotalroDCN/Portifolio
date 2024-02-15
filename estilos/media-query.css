@@ -3,12 +3,16 @@
 @media screen and (min-width: 768px) {
     body {
         width: 95vw;
-        margin: auto;
+
         padding: 30px 0px;
+        display: grid;
+        grid-template-columns: 40% auto;
+        margin: auto;
     }
 
     header {
-        width: 400px;
+        width: 390px;
+        grid-column: 1/2;
     }
 
 
@@ -16,9 +20,14 @@
         width: 380px;
     }
 
+    main {
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
     .projetos img {
-        width: 880px;
-        height: 480px;
+        width: 53vw;
+        height: 380px;
     }
 
     .projetos h3 {
@@ -27,5 +36,31 @@
 
     .projetos p {
         display: none;
+    }
+
+    footer {
+        grid-column: 1/3;
+        grid-template-columns: 30vw 40vw 26vw;
+        grid-template-rows: 120px;
+    }
+
+    footer > a {
+        grid-column: 3/4;
+
+        justify-self: end;
+    }
+
+    footer > nav {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    footer > h1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        justify-self: left;
+
+        font-size: 1.2em;
     }
 }
